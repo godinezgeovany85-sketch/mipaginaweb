@@ -1,0 +1,147 @@
+
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Examen - Página Personal</title>
+    <!-- Vinculación del CSS separado -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ENCABEZADO SUPERIOR / HERO -->
+    <header class="hero-header" id="inicio">
+        <div class="overlay"></div>
+        <div class="shape-top-left"></div>
+        <div class="shape-bottom-right">
+            <div class="circles">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="navbar">
+            <div class="logo">Mi Examen.</div>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#perfil">Sobre Mí</a></li>
+                <li><a href="#familia">Mi Familia</a></li>
+                <li><a href="#comidas">Comidas</a></li>
+                <li><a href="#series">Películas o Series</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <p class="greeting">Hola, soy</p>
+            <h1>Geovani</h1>
+            <p class="tagline">Estudiante | <span class="highlight">liceo tecnologico ipc</span></p>
+        </div>
+    </header>
+
+    <!-- SECCIÓN ACERCA DE MÍ (SOBRE MÍ) -->
+    <section class="about-section" id="perfil">
+        <div class="about-container">
+            <!-- Lado Izquierdo con fondo azul -->
+            <div class="about-blue-bg">
+                <div class="photo-card">
+             <img src="C:\Users\Geovani\Desktop\mipaginaweb\imagenes\rostro.png"><alt="rostro"> 
+                </div>
+            </div>
+
+            <!-- Lado Derecho con datos personales -->
+            <div class="about-details">
+                <span class="section-sub">INFORMACIÓN PERSONAL</span>
+                <h2>Geovani Alexander Godinez Garcia</h2>
+                <p class="role-title">Grado: 4 bachillerato | Sección: "A"</p>
+                
+                <p class="description">
+                    Bienvenido a mi página web personal de examen. Haz clic en cualquiera de las secciones para acceder a la información de mi familia, comidas preferidas o películas y series favoritas.
+                </p>
+
+                <a href="#familia" class="btn-blue">Ver Mi Familia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MI FAMILIA -->
+    <section class="services-section" id="familia">
+        <div class="section-header">
+            <h2>Mi Familia</h2>
+            <p>Haz clic en cualquiera de los botones para navegar a su página correspondiente.</p>
+        </div>
+
+        <div class="cards-grid">
+            <a href="mamá.html" class="family-card">
+                <div class="card-icon">👩</div>
+                <h3>Mi Mamá</h3>
+            </a>
+
+            <a href="papá.html" class="family-card">
+                <div class="card-icon">👨</div>
+                <h3>Mi Papá</h3>
+            </a>
+
+            <a href="hermana.html" class="family-card">
+                <div class="card-icon">👧</div>
+                <h3>Mi Hermana</h3>
+            </a>
+
+            <a href="tia.html" class="family-card">
+                <div class="card-icon">👩‍🦱</div>
+                <h3>Mi Tía</h3>
+            </a>
+
+            <a href="mi abuela.html" class="family-card">
+                <div class="card-icon">👵</div>
+                <h3>Mi Abuela</h3>
+            </a>
+
+            <a href="mis amigos.html" class="family-card">
+                <div class="card-icon">👫🏻</div>
+                <h3>Mis Amigos</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN COMIDAS FAVORITAS (ENLACE A OTRA PÁGINA) -->
+    <section class="services-section" id="comidas" style="background-color: #ffffff;">
+        <div class="section-header">
+            <span class="section-sub">GUSTOS CULINARIOS</span>
+            <h2>Comidas Favoritas</h2>
+            <p>Haz clic abajo para ver el menú de mis comidas favoritas.</p>
+        </div>
+
+        <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); justify-content: center;">
+            <a href="comidas.html" class="family-card">
+                <div class="card-icon">🍕</div>
+                <h3>Ver Comidas Favoritas</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PELÍCULAS O SERIES FAVORITAS (ENLACE A OTRA PÁGINA) -->
+    <section class="services-section" id="series">
+        <div class="section-header">
+            <span class="section-sub">ENTRETENIMIENTO</span>
+            <h2>Películas o Series Favoritas</h2>
+            <p>Haz clic abajo para ver mi lista de películas y series preferidas.</p>
+        </div>
+
+        <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); justify-content: center;">
+            <a href="peliculas.html" class="family-card">
+                <div class="card-icon">🎬</div>
+                <h3>Ver Películas y Series</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>&copy; 2026 Mi Examen. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

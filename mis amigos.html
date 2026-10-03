@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Amigos</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #dff4ff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .contenedor {
+            max-width: 950px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4aa9d8;
+            font-size: 45px;
+            margin-bottom: 30px;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.20);
+        }
+
+        /* CUADROS DE AMIGOS */
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .amigo {
+            padding: 18px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .amigo img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 4px solid white;
+        }
+
+        .amigo h2 {
+            margin: 12px 0 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* COLORES DIFERENTES */
+
+        .amigo1 {
+            background: #ffd6d6;
+        }
+
+        .amigo2 {
+            background: #d9f2ff;
+        }
+
+        .amigo3 {
+            background: #e3d5ff;
+        }
+
+        .amigo4 {
+            background: #d8f3dc;
+        }
+
+        .amigo5 {
+            background: #ffe5b4;
+        }
+
+        .amigo6 {
+            background: #f8d5ec;
+        }
+
+        .amigo7 {
+            background: #d5f5e3;
+        }
+
+        .amigo8 {
+            background: #fff2b2;
+        }
+
+        .amigo9 {
+            background: #d9e4ff;
+        }
+
+        /* FRASE */
+
+        .frase {
+            text-align: center;
+            margin: 35px 10px;
+            font-size: 24px;
+            color: #4aa9d8;
+            font-style: italic;
+        }
+
+        /* BOTÓN */
+
+        .volver {
+            display: block;
+            width: fit-content;
+            margin: 25px auto 0;
+            padding: 12px 25px;
+            background: #79c7e8;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+        }
+
+        .volver:hover {
+            background: #4aa9d8;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Mis Amigos</h1>
+
+        <div class="tarjeta">
+
+            <div class="galeria">
+
+                <!-- AMIGO 1 -->
+                <div class="amigo amigo1">
+                    <img src="C:\Users\Geovani\Desktop\mipaginaweb\imagenes\amigo 1.png" alt="Foto del amigo 1">
+                    <h2>Ericka Cambran</h2>
+                </div>
+
+                <!-- AMIGO 2 -->
+                <div class="amigo amigo2">
+                    <img src="C:\Users\Geovani\Desktop\mipaginaweb\imagenes\amigo 2 .png" alt="Foto del amigo 2">
+                    <h2>Maria Jose Vazquez</h2>
+                </div>
+
+                <!-- AMIGO 3 -->
+                <div class="amigo amigo3">
+                    <img src="C:\Users\Geovani\Desktop\mipaginaweb\imagenes\amigo 3.png" alt="Foto del amigo 3">
+                    <h2>Angely Lorenzo </h2>
+                </div>
+
+                <!-- AMIGO 4 -->
+                <div class="amigo amigo4">
+                    <img src="C:\Users\Geovani\Desktop\mipaginaweb\imagenes\amigo 4.png" alt="Foto del amigo 4">
+                    <h2>sara hernandez</h2>
+                </div>
+
+                <!-- AMIGO 5 -->
+                <div class="amigo amigo5">
+                    <img src="C:\Users\Geovani\Desktop\mipaginaweb\imagenes\amigo 5.png" alt="Foto del amigo 5">
+                    <h2>melanie requena</h2>
+                </div>
+
+                <!-- AMIGO 6 -->
+                <div class="amigo amigo6">
+                    <img src="C:\Users\Geovani\Desktop\mipaginaweb\imagenes\amigo 6.png" alt="Foto del amigo 6">
+                    <h2>barbara zanchez</h2>
+                </div>
+
+                <!-- AMIGO 7 -->
+                <div class="amigo amigo7">
+                    <img src="C:\Users\Geovani\Desktop\mipaginaweb\imagenes\amigo 7.png" alt="Foto del amigo 7">
+                    <h2>yereli santos</h2>
+                </div>
+
+                <!-- AMIGO 8 -->
+                <div class="amigo amigo8">
+                    <img src="C:\Users\Geovani\Desktop\mipaginaweb\imagenes\amigo 8.png" alt="Foto del amigo 8">
+                    <h2>jimena cordon</h2>
+                </div>
+
+                <!-- AMIGO 9 -->
+                <div class="amigo amigo9">
+                    <img src="C:\Users\Geovani\Desktop\mipaginaweb\imagenes\amigo 9.png" alt="Foto del amigo 9">
+                    <h2>analy santiago</h2>
+                </div>
+
+            </div>
+
+            <div class="frase">
+                "Los buenos amigos hacen que los momentos sean especiales."
+            </div>
+
+            <a href="index.html" class="volver">
+                Volver a Mi Familia
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

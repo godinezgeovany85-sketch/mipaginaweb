@@ -1,0 +1,498 @@
+/* --- RESET GENERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* Paleta en tonos Azul Pastel */
+    --primary-blue: #7eb0d5;       /* Azul pastel principal */
+    --dark-blue: #5c92be;          /* Azul pastel oscuro para hover/acentos */
+    --light-bg: #f5f9fc;           /* Fondo de página muy suave */
+    --soft-blue-bg: #eaf2f8;       /* Fondo alternativo en azul pastel muy claro */
+    --card-bg: #f0f7fc;            /* Fondo especial suave para tarjetas */
+    --dark-text: #2c3e50;          /* Texto principal legible */
+    --gray-text: #607274;          /* Texto secundario */
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    overflow-x: hidden;
+}
+
+/* --- HERO / ENCABEZADO SUPERIOR --- */
+.hero-header {
+    position: relative;
+    height: 320px;
+    background: linear-gradient(
+        rgba(70, 115, 150, 0.55), 
+        rgba(40, 75, 105, 0.65)
+    ), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 40px;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.hero-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(126, 176, 213, 0.25);
+    z-index: 1;
+}
+
+/* Formas orgánicas */
+.shape-top-left {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 220px;
+    height: 220px;
+    background-color: var(--primary-blue);
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    z-index: 2;
+    opacity: 0.85;
+}
+
+.shape-bottom-right {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 260px;
+    height: 180px;
+    background-color: var(--primary-blue);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.85;
+}
+
+.circles {
+    display: flex;
+    gap: 6px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.circles span {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+/* --- MENÚ NAVEGACIÓN --- */
+.navbar {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #f0f4f8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* --- CONTENIDO HERO --- */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.greeting {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #e2eef7;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 2px 0;
+}
+
+.tagline {
+    font-size: 13px;
+    color: #d0e3f2;
+}
+
+.tagline .highlight {
+    border-bottom: 1px solid var(--primary-blue);
+    color: #ffffff;
+}
+
+/* --- SECCIÓN SOBRE MÍ --- */
+.about-section {
+    padding: 60px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-blue-bg {
+    flex: 1;
+    background-color: var(--primary-blue);
+    height: 380px;
+    position: relative;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.photo-card {
+    width: 280px;
+    height: 340px;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(126, 176, 213, 0.25);
+    border-radius: 8px;
+    position: absolute;
+    right: -40px;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.about-details {
+    flex: 1.2;
+    padding-left: 40px;
+}
+
+.section-sub {
+    color: var(--dark-blue);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.about-details h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--dark-text);
+}
+
+.role-title {
+    font-size: 14px;
+    color: var(--gray-text);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 14px;
+    color: var(--gray-text);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn-blue {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    padding: 10px 26px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(126, 176, 213, 0.4);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-blue:hover {
+    background-color: var(--dark-blue);
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   --- SECCIÓN MI FAMILIA (DISEÑO RENOVADO) ---
+   ========================================== */
+.services-section {
+    background-color: var(--soft-blue-bg);
+    padding: 70px 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark-text);
+}
+
+.section-header p {
+    font-size: 13px;
+    color: var(--gray-text);
+    margin-top: 6px;
+}
+
+.cards-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Tarjetas de Familia con diseño estilizado */
+.family-card {
+    position: relative;
+    background: linear-gradient(135deg, #ffffff 0%, #eef6fc 100%);
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 8px 20px rgba(126, 176, 213, 0.15);
+    border: 1px solid #d4e5f2;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Línea decorativa superior en cada cuadro */
+.family-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--primary-blue);
+    transition: background-color 0.3s ease;
+}
+
+.family-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(92, 146, 190, 0.25);
+    border-color: var(--primary-blue);
+}
+
+.family-card:hover::before {
+    background-color: var(--dark-blue);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(126, 176, 213, 0.2);
+}
+
+.family-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+/* =======================================================
+   --- SECCIONES COMIDAS / SERIES (DISEÑO RENOVADO) ---
+   ======================================================= */
+.section-block {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.section-block.alt-bg {
+    background-color: var(--soft-blue-bg);
+}
+
+.block-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.block-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--dark-text);
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Cuadros decorados con fondo pastel y sombra */
+.item-card {
+    background: linear-gradient(135deg, #f7fbfd 0%, #e6f0f8 100%);
+    padding: 22px;
+    border-radius: 12px;
+    border-left: 5px solid var(--primary-blue);
+    box-shadow: 0 4px 15px rgba(126, 176, 213, 0.12);
+    border-top: 1px solid #e1eef7;
+    border-right: 1px solid #e1eef7;
+    border-bottom: 1px solid #e1eef7;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(92, 146, 190, 0.2);
+    border-left-color: var(--dark-blue);
+}
+
+/* Contenedor del icono dentro del cuadro */
+.item-icon {
+    font-size: 26px;
+    background-color: #ffffff;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(126, 176, 213, 0.2);
+    flex-shrink: 0;
+}
+
+.item-card h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+/* --- FOOTER --- */
+.footer {
+    background-color: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+}
+
+/* --- BOTÓN VOLVER A MI FAMILIA --- */
+.volver-familia {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.volver-familia a {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    padding: 11px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(126, 176, 213, 0.25);
+    transition: all 0.3s ease;
+}
+
+.volver-familia a:hover {
+    background-color: var(--dark-blue);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(92, 146, 190, 0.35);
+}
+
+/* --- RESPONSIVO MÓVIL --- */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .about-blue-bg {
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .photo-card {
+        position: relative;
+        right: 0;
+    }
+
+    .about-details {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .hero-header {
+        padding: 15px;
+        height: auto;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+}

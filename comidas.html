@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>COMIDAS FAVORITAS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff4c2;
+            padding: 40px 20px;
+        }
+        .contenedor {
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #b8860b;
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+        .subtitulo {
+            text-align: center;
+            color: #8b5e3c;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        /* DECORACIÓN SUPERIOR */
+        .decoracion {
+            height: 15px;
+            margin-bottom: 25px;
+            background:
+                repeating-linear-gradient(
+                    45deg,
+                    #c62828 0px,
+                    #c62828 15px,
+                    #f4c542 15px,
+                    #f4c542 30px,
+                    #1565c0 30px,
+                    #1565c0 45px,
+                    #2e7d32 45px,
+                    #2e7d32 60px
+                );
+        }
+        .galeria {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.18);
+        }
+        /* 3 FOTOS POR FILA */
+        .fotos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+        .foto {
+            background: #fffbea;
+            padding: 10px;
+            border: 4px solid #d4a017;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .foto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .foto p {
+            margin: 10px 0 5px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #a52a2a;
+        }
+        /* PIE DECORATIVO */
+        .pie {
+            margin-top: 25px;
+            height: 15px;
+            background:
+                repeating-linear-gradient(
+                    45deg,
+                    #1565c0 0px,
+                    #1565c0 15px,
+                    #c62828 15px,
+                    #c62828 30px,
+                    #f4c542 30px,
+                    #f4c542 45px,
+                    #2e7d32 45px,
+                    #2e7d32 60px
+                );
+        }
+        .volver {
+            display: block;
+            width: fit-content;
+            margin: 25px auto 0;
+            padding: 12px 25px;
+            background: #c62828;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .volver:hover {
+            background: #a51f1f;
+        }
+        /* CELULAR */
+        @media (max-width: 700px) {
+            .fotos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 450px) {
+            .fotos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>COMIDAS FAVORITAS</h1>
+        <div class="subtitulo">
+            
+        </div>
+        <div class="decoracion"></div>
+        <div class="galeria">
+            <div class="fotos">
+                <!-- pizza -->
+                <div class="foto">
+                    <img src="https://www.pizzahut.com.gt/static/media/images/images/jpg/10_11-10-2024-11-35_MD.jpg" alt="Foto 1">
+                    <p>pizza</p>
+                </div>
+                <!-- FOTO 2 -->
+                <div class="foto">
+                    <img src="https://www.sicultura.gob.gt/wp-content/uploads/2023/02/Pepian-de-Pollo.jpg" alt="Foto 2">
+                    <p>pepian de pollo</p>
+                </div>
+                <!-- FOTO 3 -->
+                <div class="foto">
+                    <img src="https://i.ytimg.com/vi/oZoUNwmHJ18/sddefault.jpg" alt="Foto 3">
+                    <p>pollo en crema</p>
+                </div>
+                <!-- FOTO 4 -->
+                <div class="foto">
+                    <img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/9589833/2147483647/strip/true/crop/2288x2288+864+0/resize/1000x1000!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2F1f%2F3a%2F53770cd64e13b73ccf1f27e6505b%2Fcarnitaasada-clasicoregio.jpg" alt="Foto 4">
+                    <p>carne asada</p>
+                </div>
+                <!-- FOTO 5 -->
+                <div class="foto">
+                    <img src="https://i.ytimg.com/vi/q4jyH3x_ErQ/maxresdefault.jpg" alt="Foto 5">
+                    <p>arroz chino</p>
+                </div>
+            </div>
+            <div class="pie"></div>
+        </div>
+        <a href="index.html" class="volver">
+            Volver a Mi Familia
+        </a>
+    </div>
+</body>
+</html>
